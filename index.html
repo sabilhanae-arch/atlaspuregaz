@@ -695,7 +695,39 @@ footer{
           www.atlaspuregas.ma
         </div>
       </div>
-      <div class="form reveal">
+      <form class="form reveal" action="https://formspree.io/f/xlgkwdap" method="POST">
+
+  <div class="fg">
+    <label>Nom / Société *</label>
+    <input name="name" type="text" required>
+  </div>
+
+  <div class="fg">
+    <label>Email *</label>
+    <input name="email" type="email" required>
+  </div>
+
+  <div class="fg">
+    <label>Type de demande *</label>
+    <select name="type" required>
+      <option value="">Sélectionner...</option>
+      <option>Appel d'offre</option>
+      <option>Diagnostic procédé</option>
+      <option>Traitement gaz / COV</option>
+      <option>Optimisation industrielle</option>
+    </select>
+  </div>
+
+  <div class="fg">
+    <label>Description *</label>
+    <textarea name="message" required></textarea>
+  </div>
+
+  <button class="btn-submit" type="submit">
+    Envoyer la demande
+  </button>
+
+</form>
         <div class="fg"><label>Nom / Société <span style="color:#E85D24">*</span></label><input id="f-nom" type="text" placeholder="Ex : Société XYZ – M. Alami" oninput="clearErr(this,'e-nom')"><div id="e-nom" class="err-msg">Veuillez indiquer votre nom ou société.</div></div>
         <div class="fg"><label>Email <span style="color:#E85D24">*</span></label><input id="f-email" type="email" placeholder="vous@societe.ma" oninput="clearErr(this,'e-email')"><div id="e-email" class="err-msg">Veuillez entrer une adresse email valide.</div></div>
         <div class="fg">
